@@ -1,15 +1,13 @@
 use js_sys::Int32Array;
-// use std::fs;
 use wasm_bindgen::prelude::*;
+// use wasm_bindgen_futures::JsFuture;
+// use web_sys::Response;
 
-#[wasm_bindgen]
-extern "C" {
-    #[wasm_bindgen(js_namespace = performance)]
-    fn now() -> i32;
-
-    #[wasm_bindgen(js_namespace = console)]
-    fn log(s: &str);
-}
+// #[wasm_bindgen]
+// extern "C" {
+//     #[wasm_bindgen(js_namespace = console)]
+//     fn log(s: &str);
+// }
 
 // #[wasm_bindgen(start)]
 // pub fn run() {
@@ -21,12 +19,18 @@ extern "C" {
 //     log(&format!("{} s", ((end - start) as f64) / 1000.0));
 // }
 
-#[wasm_bindgen]
-pub fn forloop_random(n: i64) {
-    for _i in 0..n {
-        rand::random::<i32>();
-    }
-}
+// #[wasm_bindgen]
+// pub fn forloop_random(n: i32) {
+//     for i in 0..n {
+//         log(&i.to_string());
+//     }
+// }
+
+// #[wasm_bindgen]
+// pub fn dom_load() {
+//     let window = web_sys::window().unwrap();
+//     let document = window.document().expect("should have a document on window");
+// }
 
 #[wasm_bindgen]
 pub fn bubble_sort(arr: &Int32Array) -> Int32Array {
@@ -46,25 +50,3 @@ pub fn bubble_sort(arr: &Int32Array) -> Int32Array {
     }
     Int32Array::from(&arr_vec[..])
 }
-
-#[wasm_bindgen]
-pub fn factorial(n: i32) -> i32 {
-    if n == 1 {
-        1
-    } else {
-        n * factorial(n - 1)
-    }
-}
-
-// fn bubble_sort_r(v: &mut Vec<i32>) {
-//     let mut tmp;
-//     for i in 0..(v.len() - 1) {
-//         for j in 0..(v.len() - i - 1) {
-//             if v[j] > v[j + 1] {
-//                 tmp = v[j];
-//                 v[j] = v[j + 1];
-//                 v[j + 1] = tmp;
-//             }
-//         }
-//     }
-// }
