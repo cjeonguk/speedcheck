@@ -1,0 +1,21 @@
+Bubble sort(10_000 ~ 1)
+
+Google Chrome:
+JS x 30.72 ops/sec ±0.25% (42 runs sampled)
+WASM x 11.17 ops/sec ±0.50% (32 runs sampled)
+Fastest is JS
+
+Firefox:
+JS x 15.32 ops/sec ±0.35% (29 runs sampled)
+WASM x 30.06 ops/sec ±0.27% (41 runs sampled)
+Fastest is WASM
+
+Brave:
+JS x 30.81 ops/sec ±0.15% (42 runs sampled)
+WASM x 11.21 ops/sec ±0.21% (32 runs sampled)
+Fastest is JS
+
+Node.js
+JS x 30.67 ops/sec ±0.28% (55 runs sampled)
+WASM x 30.73 ops/sec ±0.20% (55 runs sampled)
+Fastest is WASM,JS
