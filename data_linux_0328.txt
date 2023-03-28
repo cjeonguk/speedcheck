@@ -32,12 +32,12 @@ Fastest is WASM
 
 Node.js 18.13.0:
 Suite 1
-JS x 30.79 ops/sec ±0.20% (55 runs sampled)
-WASM x 23.06 ops/sec ±0.45% (42 runs sampled)
-Fastest is JS
+JS x 30.79 ops/sec ±0.26% (55 runs sampled)
+WASM x 30.92 ops/sec ±0.05% (55 runs sampled)
+Fastest is WASM,JS
 Suite 2
-JS x 75.12 ops/sec ±1.36% (71 runs sampled)
-WASM x 698 ops/sec ±0.52% (94 runs sampled)
+JS x 76.99 ops/sec ±1.07% (73 runs sampled)
+WASM x 717 ops/sec ±0.50% (94 runs sampled)
 Fastest is WASM
 
 * Windows와 동일 현상 발생
