@@ -1,26 +1,27 @@
 Bubble sort(10_000 ~ 1)
+Serve 14.2.0
 
-Google Chrome:
+Google Chrome 111.0.5563.112:
 JS x 11.59 ops/sec ±9.84% (25 runs sampled)
 WASM x 4.91 ops/sec ±1.06% (17 runs sampled)
 Fastest is JS
 
-Firefox:
+Firefox 111.0.1:
 JS x 6.87 ops/sec ±5.00% (21 runs sampled)
 WASM x 15.52 ops/sec ±4.18% (30 runs sampled)
 Fastest is WASM
 
-Brave:
+Brave 1.49.128:
 JS x 12.01 ops/sec ±5.61% (26 runs sampled)
 WASM x 9.09 ops/sec ±4.81% (27 runs sampled)
 Fastest is JS
 
-Microsoft Edge:
+Microsoft Edge (버전 기록 X):
 JS x 9.38 ops/sec ±6.91% (28 runs sampled)
 WASM x 7.92 ops/sec ±7.10% (25 runs sampled)
 Fastest is JS
 
-Node.js:
+Node.js 16.14.0:
 JS x 14.64 ops/sec ±2.19% (41 runs sampled)
 WASM x 9.24 ops/sec ±1.37% (27 runs sampled)
 Fastest is JS

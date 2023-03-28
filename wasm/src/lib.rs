@@ -29,11 +29,13 @@ pub fn forloop_random(n: i64) {
 }
 
 #[wasm_bindgen]
-pub fn bubble_sort(arr: &Int32Array) -> Int32Array {
-    let mut arr_vec: Vec<i32> = Vec::new();
-    for i in 0..arr.length() {
-        arr_vec.push(arr.get_index(i));
-    }
+pub fn bubble_sort(arr_input: &Int32Array) -> Int32Array {
+    // let mut arr_vec: Vec<i32> = Vec::new();
+    let mut arr_vec = vec![0; arr_input.length() as usize];
+    arr_input.copy_to(&mut arr_vec[..]);
+    // for i in 0..arr.length() {
+    //     arr_vec.push(arr.get_index(i));
+    // }
     let mut tmp;
     for i in 0..(arr_vec.len() - 1) {
         for j in 0..(arr_vec.len() - i - 1) {
@@ -68,3 +70,13 @@ pub fn factorial(n: i32) -> i32 {
 //         }
 //     }
 // }
+
+#[wasm_bindgen]
+pub fn push_loop(n: i32) -> Int32Array {
+    let mut v: Vec<i32> = Vec::new();
+    for i in 0..n {
+        v.push(i);
+    }
+
+    Int32Array::from(&v[..])
+}
