@@ -42,12 +42,12 @@ Fastest is WASM
 
 Node.js 18.15.0:
 Suite 1
-JS x 13.90 ops/sec ±0.81% (38 runs sampled)
-WASM x 13.70 ops/sec ±0.22% (38 runs sampled)
-Fastest is JS
+JS x 13.93 ops/sec ±0.75% (39 runs sampled)
+WASM x 14.62 ops/sec ±0.51% (40 runs sampled)
+Fastest is WASM
 Suite 2
-JS x 44.24 ops/sec ±0.52% (59 runs sampled)
-WASM x 315 ops/sec ±1.05% (87 runs sampled)
+JS x 45.02 ops/sec ±1.28% (60 runs sampled)
+WASM x 318 ops/sec ±0.87% (87 runs sampled)
 Fastest is WASM
 
 * Google Chrome, Brave, Microsoft Edge의 경우 새 탭에서 웹페이지에 접속 후 콘솔 창을 열었을 때 평소보다 WASM 성능이 높게 측정됨

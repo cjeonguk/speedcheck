@@ -2,14 +2,14 @@ use js_sys::Int32Array;
 // use std::fs;
 use wasm_bindgen::prelude::*;
 
-#[wasm_bindgen]
-extern "C" {
-    #[wasm_bindgen(js_namespace = performance)]
-    fn now() -> i32;
+// #[wasm_bindgen]
+// extern "C" {
+//     #[wasm_bindgen(js_namespace = performance)]
+//     fn now() -> i32;
 
-    #[wasm_bindgen(js_namespace = console)]
-    fn log(s: &str);
-}
+//     #[wasm_bindgen(js_namespace = console)]
+//     fn log(s: &str);
+// }
 
 // #[wasm_bindgen(start)]
 // pub fn run() {
@@ -21,12 +21,12 @@ extern "C" {
 //     log(&format!("{} s", ((end - start) as f64) / 1000.0));
 // }
 
-#[wasm_bindgen]
-pub fn forloop_random(n: i64) {
-    for _i in 0..n {
-        rand::random::<i32>();
-    }
-}
+// #[wasm_bindgen]
+// pub fn forloop_random(n: i64) {
+//     for _i in 0..n {
+//         rand::random::<i32>();
+//     }
+// }
 
 #[wasm_bindgen]
 pub fn bubble_sort(arr_input: &Int32Array) -> Int32Array {
@@ -49,14 +49,14 @@ pub fn bubble_sort(arr_input: &Int32Array) -> Int32Array {
     Int32Array::from(&arr_vec[..])
 }
 
-#[wasm_bindgen]
-pub fn factorial(n: i32) -> i32 {
-    if n == 1 {
-        1
-    } else {
-        n * factorial(n - 1)
-    }
-}
+// #[wasm_bindgen]
+// pub fn factorial(n: i32) -> i32 {
+//     if n == 1 {
+//         1
+//     } else {
+//         n * factorial(n - 1)
+//     }
+// }
 
 // fn bubble_sort_r(v: &mut Vec<i32>) {
 //     let mut tmp;
