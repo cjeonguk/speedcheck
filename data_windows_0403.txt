@@ -1,0 +1,53 @@
+Serve 14.2.0
+
+Google Chrome 111.0.5563.147:
+Suite 1
+JS x 15.90 ops/sec ±1.00% (31 runs sampled)
+WASM x 7.15 ops/sec ±0.55% (22 runs sampled)
+Fastest is JS
+Suite 2
+JS x 74.24 ops/sec ±1.28% (56 runs sampled)
+WASM x 232 ops/sec ±2.16% (61 runs sampled)
+Fastest is WASM
+
+Firefox 111.0.1:
+JS x 7.75 ops/sec ±2.83% (23 runs sampled)
+WASM x 13.18 ops/sec ±0.61% (25 runs sampled)
+Fastest is WASM
+Suite 2
+JS x 157 ops/sec ±2.98% (51 runs sampled)
+WASM x 324 ops/sec ±2.40% (41 runs sampled)
+Fastest is WASM
+
+Brave 1.49.132:
+Suite 1
+JS x 15.96 ops/sec ±0.95% (31 runs sampled)
+WASM x 7.01 ops/sec ±0.62% (22 runs sampled)
+Fastest is JS
+Suite 2
+JS x 75.92 ops/sec ±1.93% (50 runs sampled)
+WASM x 236 ops/sec ±1.75% (62 runs sampled)
+Fastest is WASM
+
+Microsoft Edge 111.0.1661.62:
+Suite 1
+JS x 16.02 ops/sec ±1.61% (31 runs sampled)
+WASM x 7.00 ops/sec ±2.38% (22 runs sampled)
+Fastest is JS
+Suite 2
+JS x 72.94 ops/sec ±1.99% (55 runs sampled)
+WASM x 224 ops/sec ±3.55% (58 runs sampled)
+Fastest is WASM
+
+Node.js 18.15.0:
+Suite 1
+JS x 13.46 ops/sec ±1.01% (37 runs sampled)
+WASM x 13.22 ops/sec ±0.53% (37 runs sampled)
+Fastest is JS
+Suite 2
+JS x 42.38 ops/sec ±0.73% (58 runs sampled)
+WASM x 295 ops/sec ±1.12% (87 runs sampled)
+Fastest is WASM
+
+* Google Chrome, Brave, Microsoft Edge의 경우 새 탭에서 웹페이지에 접속 후 콘솔 창을 열었을 때 평소보다 WASM 성능이 높게 측정됨
+-> 새로고침하거나 콘솔창을 킨 후 웹페이지에 접속하면 발생하지 않았기 때문에 오류 데이터라 판단, 무시함

@@ -15,9 +15,11 @@ async function run() {
   // const arr = fs.readFileSync(`${__dirname}/../random_arr.txt`, 'utf8').split(', ').map(Number);
 
   const arr = [];
+  const arr2 = [];
   
   for (let i = 10_000; i > 0; i--) {
     arr.push(i);
+    arr2.push(i);
     // console.log(i);
   }
   
@@ -52,9 +54,9 @@ async function run() {
 
 
   suite2.add('JS', () => {
-    const arr = [];
+    const arr3 = [];
     for (let i = 0; i < 1_000_000; i++) {
-      arr.push(i);
+      arr3.push(i);
       // console.log(i);
     }
   }).add('WASM', () => {

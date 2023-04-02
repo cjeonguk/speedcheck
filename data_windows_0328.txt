@@ -3,7 +3,7 @@ Serve 14.2.0
 Google Chrome 111.0.5563.112:
 Suite 1
 JS x 16.27 ops/sec ±0.41% (31 runs sampled)
-main.js:42 WASM x 7.24 ops/sec ±0.57% (22 runs sampled)
+WASM x 7.24 ops/sec ±0.57% (22 runs sampled)
 Fastest is JS
 Suite 2
 JS x 76.45 ops/sec ±1.56% (50 runs sampled)
