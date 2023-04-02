@@ -1,0 +1,44 @@
+Serve 14.2.0
+
+Google Chrome 111.0.5563.110:
+Suite 1
+JS x 30.87 ops/sec ±0.12% (42 runs sampled)
+WASM x 11.57 ops/sec ±0.20% (33 runs sampled)
+Fastest is JS
+Suite 2
+JS x 145 ops/sec ±0.71% (59 runs sampled)
+WASM x 299 ops/sec ±0.30% (61 runs sampled)
+Fastest is WASM
+
+Firefox 111.0.1:
+Suite 1
+JS x 15.39 ops/sec ±0.21% (29 runs sampled)
+WASM x 30.58 ops/sec ±0.30% (42 runs sampled)
+Fastest is WASM
+Suite 2
+JS x 200 ops/sec ±1.78% (51 runs sampled)
+WASM x 388 ops/sec ±1.55% (51 runs sampled)
+Fastest is WASM
+
+
+Brave 1.49.128:
+Suite 1
+JS x 30.84 ops/sec ±0.15% (42 runs sampled)
+WASM x 11.59 ops/sec ±0.18% (33 runs sampled)
+Fastest is JS
+Suite 2
+JS x 137 ops/sec ±0.79% (61 runs sampled)
+WASM x 294 ops/sec ±0.31% (64 runs sampled)
+Fastest is WASM
+
+Node.js 18.13.0:
+Suite 1
+JS x 30.31 ops/sec ±1.73% (54 runs sampled)
+WASM x 26.04 ops/sec ±1.40% (48 runs sampled)
+Fastest is JS
+Suite 2
+JS x 73.65 ops/sec ±1.47% (70 runs sampled)
+WASM x 693 ops/sec ±0.48% (95 runs sampled)
+Fastest is WASM
+
+* Windows와 동일 현상 발생
